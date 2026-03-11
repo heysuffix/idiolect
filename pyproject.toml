@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "idiolect"
+version = "0.1.0"
+description = "Cross-lingual author attribution — find the same voice across different languages"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+keywords = [
+    "stylometry", "authorship-attribution", "nlp", "osint",
+    "disinformation", "cross-lingual", "forensics", "text-analysis"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Information Technology",
+    "Topic :: Security",
+    "Topic :: Text Processing :: Linguistic",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "sentence-transformers>=2.7.0",
+    "numpy>=1.24.0",
+    "click>=8.1.0",
+    "rich>=13.0.0",
+    "langdetect>=1.0.9",
+]
+
+[project.urls]
+Homepage = "https://github.com/sa-aris/idiolect"
+Issues = "https://github.com/sa-aris/idiolect/issues"
+
+[project.scripts]
+idiolect = "cli:cli"
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
