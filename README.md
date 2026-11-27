@@ -73,7 +73,7 @@ pip install idiolect
 
 Or from source:
 ```bash
-git clone https://github.com/sa-aris/idiolect
+git clone https://github.com/heysuffix/idiolect
 cd idiolect
 pip install -r requirements.txt
 ```
